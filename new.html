@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""id="form">
+
+        <div class="box">
+            <input type="text" name="" id="hello">
+            <small></small>
+        </div>
+<button type="submit">submit</button>
+    </form>
+   
+
+
+    <script>
+      
+    var  h = document.getElementById('hello');
+    var  form = document.getElementById('form');
+
+form.addEventListener('submit',(e) =>{
+e.preventDefault();
+checkInputs();
+
+});
+
+
+
+function checkInputs(){
+    if(h.value.length>1){
+  document.querySelector("small").innerHTML = 'ok';
+}
+}
+
+// function setErrorFor(input, message) {
+//     const formControl = input.parentElement;
+//     const small = formControl.querySelector("samll");
+
+//     small.innerHTML = "hello world";
+// }
+
+
+
+
+
+    </script>
+</body>
+</html>
